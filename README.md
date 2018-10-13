@@ -1,9 +1,7 @@
 **Code Snippets**
 
-————
-
 这些代码块是自己总结的和网上博客里面摘抄下的(coffee写法)
-————
+
 
 ## wish these code Snippets will helps :smile:
 
@@ -72,12 +70,21 @@ findAge = (users) =>
 findAge users
 ```
 
-- 去除数组中的重复项
+- 去除数组中的重复项
 ```coffee
 arr = [1, 2, 4, 5, 2, 3, 3, 1]
 unique = (arr) =>
   [new Set(arr)...]
 unique arr
+```
+
+- 生成随机整数组成的数组， 数组长度和元素大小可定义
+```coffee
+getNumber = (length, limit) =>
+  Array.from { length }
+  , => 
+    Math.floor Math.random() * limit
+getNumber 10, 100
 ```
 
   
